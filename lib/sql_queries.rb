@@ -5,6 +5,7 @@
 # end
 
 # Make sure each ruby method returns a string containing a valid SQL statement.
+require 'pry'
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_title
   "SELECT projects.title, sum(pledges.amount)  FROM projects JOIN pledges ON projects.id = pledges.project_id  GROUP BY projects.title ORDER BY projects.title"
@@ -21,7 +22,7 @@ end
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_summed_amount
   "SELECT users.name, SUM(pledges.amount) FROM users JOIN pledges ON users.id = pledges.user_id GROUP BY pledges.user_id ORDER BY SUM(pledges.amount) "
 end
-
+binding.pry 
 def selects_the_category_names_and_pledge_amounts_of_all_pledges_in_the_music_category
   "Write your SQL query Here"
 end
