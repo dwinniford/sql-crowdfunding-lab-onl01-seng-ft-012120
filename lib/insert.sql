@@ -29,3 +29,5 @@ INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUE
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ( "Hot-pot camel back", "kitchen utensil", 230, 02202020, 03012020);
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ( "Hot-pot camel back", "kitchen utensil", 230, 02202020, 03012020);
 INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ( "Hot-pot camel back", "kitchen utensil", 230, 02202020, 03012020);
+
+INSERT INTO pledges (amount, )
